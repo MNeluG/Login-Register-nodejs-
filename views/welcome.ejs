@@ -1,0 +1,57 @@
+  
+
+<style>
+  * {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			position: relative;
+			background-color: #eee
+				
+      }
+      h1 {
+			text-align: center;
+			font-size: 30 px;
+			margin: 0;
+			font-family: sans-serif;
+    }
+    button {
+      background-color: #0074d9;
+			color: #fff;
+			padding: 10px;
+			margin: 8px 0;
+			width: 88%;
+			border-radius: 5px;
+			font-size: 15px;
+			cursor: pointer;
+			outline: none;
+			border: none;
+			opacity: 0.7;
+		}
+		button:hover{
+			opacity: 1;
+    }
+    hr {
+			width: 100%;
+			margin-top: 15px;
+			border-color: #0074d9;
+    }
+    .welcome {
+			width: 800px;
+			height: 100px;
+			background: #fff;
+			padding: 20px;
+			margin: 2% auto 0;
+			text-align: center;
+			padding: 70px 30px;
+		}
+</style>
+
+<div class = "welcome">
+  <h1>Welcome <%= name %> to our website !</h1>
+  <hr>
+<form action="/logout?_method=DELETE" method="POST">
+  <button type="submit">Log Out</button>
+</form>
+</div>

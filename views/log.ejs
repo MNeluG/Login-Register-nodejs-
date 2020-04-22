@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>TW Fashion Shop</title>
+		<html lang = "en">
+		<link href = "/assets/log.css" rel = "stylesheet" type = "text/css">
+		<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			position: relative;
+			background-color: #eee
+				
+			}
+		
+		.signup {
+			width: 300px;
+			height: 400px;
+			background: #fff;
+			padding: 20px;
+			margin: 2% auto 0;
+			text-align: center;
+			padding: 70px 30px;
+		}
+		.icon {
+			width: 80px;
+			height: 80px;
+			border-radius: 50%;
+			top: -50px;
+		}
+		.log_logo{
+			margin-top: 5%;
+			text-align: center;
+			font-family: Brush Script MT;
+			font-size: 60px;
+		}
+		.log_logo a {
+			text-decoration: none;
+			color: black;
+		}
+		h1 {
+			text-align: center;
+			font-size: 30 px;
+			margin: 0;
+			font-family: sans-serif;
+		}
+		p {
+			font-size: 18px;
+			font-family: sans-serif;
+		}
+		hr {
+			width: 100%;
+			margin-top: 15px;
+			border-color: #0074d9;
+		}
+		.input {
+			padding: 10px;
+			margin: 8px 0;
+			width: 80%;
+			border : 1px solid black;
+			border-radius: 5px;
+		}
+		button {
+			color: #fff;
+			padding: 10px;
+			margin: 8px 0;
+			width: 88%;
+			border-radius: 5px;
+			font-size: 15px;
+			cursor: pointer;
+			outline: none;
+			border: none;
+			opacity: 0.7;
+		}
+		button:hover{
+			opacity: 1;
+		}
+		.sign_button {
+			background-color: #0074d9;
+		}
+		.join_button {
+			background-color: #0074d9;
+		}
+	</style>
+		
+	<head>
+		<body>
+		<div class="log_logo"><a href="fashion_0.html">
+		    Fashion eShop
+		    </a>
+		</div>
+			<div class = "signup">
+		 		<img src="/image/icon.png" class = "icon">
+				<h1>Sign up</h1>
+				<% if (messages.error) { %>
+					<%= messages.error %>
+				  <% } %>
+				<form action = "/login" method="post">
+					<input type="email" id = "email" name = "email" class = "input" placeholder="Your Email" required>
+					<input type="password" id = "password" name = "password" class = "input" placeholder="Your Password" required>
+					<button type="submit" class = "sign_button">Sign up</button>
+					<hr>
+					<p class = "login">Don't have an account?</p>
+				</form>
+				<form action = "/join" method="post">
+				<button type="submit" class = "join_button">Join</button>
+			</form>
+		 	</div>
+		</body>
